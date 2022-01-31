@@ -3,9 +3,11 @@ The code for collecting data from GTac, controlling robotics with integrated GTa
 
 ## GTac: A Biomimetic Tactile Sensor Design
 This section is to introduce GTac and its integration with robotics.
-For more information, please check out our paper. 
+For more information, please check out our paper.
 
-Z. Lu et al. "GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots" In Review, Jan. 2022, Available: (update later)
+
+Z. Lu, X. Gao, and H. Yu, “GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots,” arXiv:2201.12005 [cs], Jan. 2022. [Online]. Available: http://arxiv.org/abs/2201.12005
+
 <!---[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Pmd8PvLpeUA/0.jpg)](https://youtu.be/Pmd8PvLpeUA)--->
 <p align="center">
 <a href="https://youtu.be/Pmd8PvLpeUA">
