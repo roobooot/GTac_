@@ -15,12 +15,26 @@ Z. Lu, X. Gao, and H. Yu, “GTac: A Biomimetic Tactile Sensor with Skin-like He
 </a>
 </p>
 
+## Minimum Requirement
+
+### Environment Requirement
+```
+-Python3.6
+
+-seaborn
+
+-pandas
+
+-tensorflow
+
+-sklearn
+```
+### Hardware Requirement
+```
+-Serial Port
+```
 ## Quick setup
 
-### Requirement
--Python3
-
--Serial port
 ### Serial port in Ubuntu
 ```ruby
 //check serial port ID
@@ -42,3 +56,8 @@ sudo chmod 666 /dev/ttys0 (serial port ID in Windows)
 ```ruby
 python draw_line3.py f 0 s 0
 ```
+## Contact Information
+If you have any queries, do not hesitate to contact <a href="https://roobooot.github.io/">Zeyu Lu</a> (email: zeyu.lu@u.nus.edu).
+
+## Acknowledge
+This project is supervised by <a href="https://www.eng.nus.edu.sg/bme/staff/dr-yuhy/">Prof. Haoyong Yu</a> in <a href="https://wiki.nus.edu.sg/display/biorobotics/Biorobotics+Lab">Biorobotics Lab</a> @NUS.
