@@ -34,7 +34,7 @@ Z. Lu, X. Gao, and H. Yu, “GTac: A Biomimetic Tactile Sensor with Skin-like He
 -Serial Port
 ```
 ## Quick setup
-
+Set  ```/software/``` as the root path of the project to run the code inside.
 ### Serial port in Ubuntu
 ```ruby
 //check serial port ID
