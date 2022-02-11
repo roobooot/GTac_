@@ -15,6 +15,16 @@ Z. Lu, X. Gao, and H. Yu, “GTac: A Biomimetic Tactile Sensor with Skin-like He
 </a>
 </p>
 
+```
+@misc{lu2022gtac,
+      title={GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots}, 
+      author={Zeyu Lu and Xingyu Gao and Haoyong Yu},
+      year={2022},
+      eprint={2201.12005},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
+```
 ## Minimum Requirement
 
 ### Environment Requirement
