@@ -7,19 +7,16 @@ import time
 
 import seaborn as sns
 import pandas as pd
-import matplotlib
 from matplotlib.colors import ListedColormap
 from mpl_toolkits.mplot3d import Axes3D
 # matplotlib.use('TkAgg')
 from matplotlib import pyplot as plt
-from matplotlib.legend import _get_legend_handles_labels
-from matplotlib.animation import FuncAnimation
 import gtac_config
 import numpy as np
 import ntpath
 from sklearn.linear_model import LogisticRegression
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis, QuadraticDiscriminantAnalysis
-from sklearn import preprocessing, metrics
+from sklearn import metrics
 from sklearn.utils import shuffle
 from sklearn.decomposition import PCA
 from sklearn.metrics import confusion_matrix
@@ -1715,7 +1712,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     filename_1 = args.filename
     # filename_1 = 'data/to_draw_and_analysis_grasping_then_handover_700_GTAC_20210822_095834.csv'
-    filename_1 = 'data/to_draw_and_analysis_grasping_then_handover_700_GTAC_20210822_103421.csv'
+    # filename_1 = 'data/to_draw_and_analysis_grasping_then_handover_700_GTAC_20210822_103421.csv'
     # filename_1 = 'data/to_draw_and_analysis_grasping_only_700_GTAC_20210822_105214.csv'
 
     gtac_data_read = gtac_data(filename=filename_1, f_sum_th=20, replace_aft_ct=True)

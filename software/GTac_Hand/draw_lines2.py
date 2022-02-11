@@ -1,12 +1,8 @@
-import copy
-
-from GTac_Data import gtac_data
 from data_gen import raw_data_byts_checkout_2
 from data_collect_fingers_five import COLUMNS_RAW_FINGER_DATA, MAG_NUM, COL_INDEX
 from Handover import collect_DataPoints, find_location, find_mat_value
 from Stably_Gentle_Grasping import find_mat_sum_sec, reactive_pinch
 from draw_bubbles_py_3 import setup_scatter_ax, plot_fingertip_2
-from draw_lines2 import update_vals
 import serial
 import time
 import pandas as pd
@@ -16,12 +12,11 @@ import matplotlib
 # matplotlib.use('TkAgg')
 from matplotlib import pyplot as plt
 from matplotlib.animation import FuncAnimation
-from GTac_Hand import gtac_hand
 
 window_length = 200
+mag_x = []
 x = np.linspace(0, 199, 200)
 y = np.zeros(len(x))
-mag_x = []
 mag_y = []
 mag_z = []
 
@@ -42,6 +37,7 @@ mat_sz = np.zeros(16)
 mat_amp_index = 10
 pressing_loc_amp_index = 2
 mat_loc_index = 0.001
+
 
 
 
@@ -86,21 +82,27 @@ def update_vals(data_frame_array, finger=1, sec=2, window_len=200):
         press_location_r_list = press_location_r_list[-window_len:]
         press_location_c_list = press_location_c_list[-window_len:]
     print('r:{};c:{}'.format(press_location_r, press_location_c))
-    # update vals for plot gaussian
-    # zarray = gaus2d(x=x_mesh, y=y_mesh,
-    #                        mx=press_location_r,
-    #                        my=press_location_c,
-    #                        sx=1,
-    #                        sy=1)
 
-
-# define normalized 2D gaussian
-def gaus2d(x=0, y=0, mx=0, my=0, sx=1, sy=1):
-    return 1. / (2. * np.pi * sx * sy) * np.exp(-((x - mx)**2. / (2. * sx**2.) + (y - my)**2. / (2. * sy**2.)))
 
 def plot_pressing_loc(scat, press_location_r, press_location_c, sec_sum):
     scat.set_offsets(np.array([press_location_c, press_location_r]))
     scat.set_sizes([sec_sum * pressing_loc_amp_index])
+
+
+def animate(i):
+    s = time.time()
+    data = raw_data_byts_checkout_2(ser, verbose=False)
+    ms = int(round((time.time() - start) * 1000))
+    data.append(ms)
+    # dt_list.append(data)
+    data_frame_array = data - avg  # average by the initial data
+    update_vals(data_frame_array)
+
+    plt.cla()
+    plt.plot(mag_y, label='channel-0')
+    plt.legend()
+    print('frames {}, time {}'.format(i, round((time.time() - s) * 1000)))
+
 
 def set_data_sec(f4_ax1_scat_tri_mat, f4_ax1_scat_pre_loc,
                  f4_ax2_magx, f4_ax2_magy, f4_ax3_magz,
@@ -118,6 +120,85 @@ def set_data_sec(f4_ax1_scat_tri_mat, f4_ax1_scat_pre_loc,
         f4_ax3_mat_sum.set_ydata(sum_value_list)
         f4_ax4_center_x.set_ydata(press_location_c_list)
         f4_ax4_center_y.set_ydata(press_location_r_list)
+
+def animate2(i):
+    global TO_MOVE, TO_RELEASE, pinch, time_thumb_fle, last_time_12, last_time_12_inv
+    start_in = time.time()
+    data = raw_data_byts_checkout_2(ser, verbose=False)
+    ms = int(round((time.time() - start) * 1000))
+    data.append(ms)
+    # dt_list.append(data)
+    data_frame_array = data - avg  # average by the initial data
+    to_return = []
+    for i, f in enumerate(finger_to_plot):
+        for j, s in enumerate(sec_to_plot):
+            update_vals(data_frame_array, finger=f, sec=s)
+            ind = i * len(sec_to_plot) + j
+            print(ind)
+            set_data_sec(ax1_scat_tri_mat_list[ind],
+                         ax1_scat_pre_loc_list[ind],
+                         ax2_magx_list[ind],
+                         ax2_magy_list[ind],
+                         ax2_magz_list[ind],
+                         ax3_mat_sum_list[ind],
+                         ax4_center_x_list[ind],
+                         ax4_center_y_list[ind])
+            to_return.append(ax1_scat_tri_mat_list[ind])
+            to_return.append(ax1_scat_pre_loc_list[ind])
+            to_return.append(ax2_magx_list[ind])
+            to_return.append(ax2_magy_list[ind])
+            to_return.append(ax2_magz_list[ind])
+            to_return.append(ax3_mat_sum_list[ind])
+            to_return.append(ax4_center_x_list[ind])
+            to_return.append(ax4_center_y_list[ind])
+
+    # control the fingers to grasp
+    # pinch,time_thumb_fle,last_time_12,last_time_12_inv = reactive_pinch(data_frame_array,ser,
+    #                pinch,time_thumb_fle,last_time_12,last_time_12_inv)
+    mat_sum_sec = find_mat_sum_sec(data_frame_array,
+                                   mat_th=50,
+                                   verbose=False)
+    if mat_sum_sec[2, 0] > 50 and not pinch:
+        pinch = True
+    # creat current time stamp
+    tri_index = 1 * 9 + (2 - 0) * 3
+    tri_index2 = 0 * 9 + (2 - 2) * 3
+    time_ctrl = time.time()
+    if pinch and mat_sum_sec[0, 2] < 300 and time_ctrl - time_thumb_fle > 0.05:
+        ser.write(b'<20>')
+        time_thumb_fle = time_ctrl
+
+    if pinch and data_frame_array[tri_index + 2] < 800 and time_ctrl - last_time_12 > 0.01:
+        ser.write(b'<21>')
+        # ser.write(b'<1-1>')
+        # ser.write(b'<31>')
+        # ser.write(b'<51>')
+        # ser.write(b'<61>')
+        last_time_12 = time_ctrl
+
+    if pinch and data_frame_array[tri_index + 2] > 1000 and time_ctrl - last_time_12_inv > 0.01:
+        ser.write(b'<2-1>')
+        # ser.write(b'<2-1>')
+        # ser.write(b'<11>')
+        # ser.write(b'<3-1>')
+        # ser.write(b'<5-1>')
+        # ser.write(b'<6-1>')
+        last_time_12_inv = time_ctrl
+    # if time.time() - start > 5 and TO_MOVE:
+    #     ser.write(b'<220>')
+    #     ser.write(b'<450>')
+    #     TO_MOVE = False
+    #     TO_RELEASE = True
+    # if time.time() - start > 15 and TO_RELEASE:
+    #     ser.write(b'<>')
+    #     TO_RELEASE = False
+    print('mag z of f-0 s-2:{}'.format(data_frame_array[tri_index2 + 2]))
+    print('frames {}, time {}ms'.format(i, round((time.time() - start_in) * 1000)))
+    return to_return
+
+
+def plot(ax, style):
+    return ax.plot(x, y, style, animated=True)[0]
 
 
 def setup_scatter_ax2(ax):
@@ -147,8 +228,8 @@ def setup_figures():
     f4_ax1_scat_tri_mat, f4_ax1_scat_pre_loc = setup_scatter_ax2(f4_ax1)
 
     f4_ax2 = fig4.add_subplot(gs[0, -2:])
-    f4_ax2.set_title('Shear Force Signals (uT)')
-    f4_ax2.set_ylim([-500, 500])
+    f4_ax2.set_title('Shear Force Signals')
+    f4_ax2.set_ylim([-1500, 1500])
     f4_ax2_magx = f4_ax2.plot(np.zeros(window_length), label='SA-II x')[0]
     f4_ax2_magy = f4_ax2.plot(np.zeros(window_length), label='SA-II y')[0]
     # f4_ax3_magz = f4_ax2.plot(np.zeros(window_length), label='mag-z')[0]
@@ -171,108 +252,32 @@ def setup_figures():
     f4_ax4_center_y = f4_ax4.plot(np.zeros(window_length), label='y')[0]
     f4_ax4.legend()
 
-    # fig1 = plt.figure()
-    # f1_ax1_gaussian = fig1.add_subplot(111, projection='3d')
-    # f1_ax1_gaussian.set_title('GTac Super-Resotion')
-    # f1_ax1_gaussian_plot = [f1_ax1_gaussian.plot_surface(x_mesh, y_mesh, zarray[:, :], color='0.75', rstride=1, cstride=1)]
+    fig1 = plt.figure()
+    f1_ax1_gaussian = fig1.add_subplot(111, projection='3d')
+    f1_ax1_gaussian.set_title('GTac Super-Resotion')
+    plot = [ax.plot_surface(x, y, zarray[:, :], color='0.75', rstride=1, cstride=1)]
 
     return fig4, f4_ax1_scat_tri_mat, f4_ax1_scat_pre_loc, \
            f4_ax2_magx, f4_ax2_magy, f4_ax3_magz, \
-           f4_ax3_mat_sum, f4_ax4_center_x, f4_ax4_center_y
-
-
-def animate2(i):
-    print(i)
-    global TO_MOVE, TO_RELEASE, pinch, time_thumb_fle, last_time_12, last_time_12_inv
-    start_in = time.time()
-    data = raw_data_byts_checkout_2(ser, verbose=False)
-    ms = int(round((time.time() - start) * 1000))
-    data.append(ms)
-    data = gtac_data.preprocess_(data)
-    # dt_list.append(data)
-    data_frame_array = data - avg  # average by the initial data
-    to_return = []
-    for f_ind, f in enumerate(finger_to_plot):
-        for s_ind, s in enumerate(sec_to_plot):
-            update_vals(data_frame_array, finger=f, sec=s)
-            ind = f_ind * len(sec_to_plot) + s_ind
-            # print(ind)
-            set_data_sec(ax1_scat_tri_mat_list[ind],
-                         ax1_scat_pre_loc_list[ind],
-                         ax2_magx_list[ind],
-                         ax2_magy_list[ind],
-                         ax2_magz_list[ind],
-                         ax3_mat_sum_list[ind],
-                         ax4_center_x_list[ind],
-                         ax4_center_y_list[ind])
-            to_return.append(ax1_scat_tri_mat_list[ind])
-            to_return.append(ax1_scat_pre_loc_list[ind])
-            to_return.append(ax2_magx_list[ind])
-            to_return.append(ax2_magy_list[ind])
-            to_return.append(ax2_magz_list[ind])
-            to_return.append(ax3_mat_sum_list[ind])
-            to_return.append(ax4_center_x_list[ind])
-            to_return.append(ax4_center_y_list[ind])
-
-    # control the fingers to grasp
-    # pinch,time_thumb_fle,last_time_12,last_time_12_inv = reactive_pinch(data_frame_array,ser,
-    #                pinch,time_thumb_fle,last_time_12,last_time_12_inv)
-    # mat_sum_sec = find_mat_sum_sec(data_frame_array,
-    #                                mat_th=50,
-    #                                verbose=False)
-    # if mat_sum_sec[2, 0] > 50 and not pinch:
-    #     pinch = True
-    # # creat current time stamp
-    # time_ctrl = time.time()
-    # if pinch and mat_sum_sec[0, 2] < 300 and time_ctrl - time_thumb_fle > 0.05:
-    #     ser.write(b'<21>')
-    #     time_thumb_fle = time_ctrl
-    #
-    # if pinch and mat_sum_sec[1, 0] < 600 and time_ctrl - last_time_12 > 0.1:
-    #     ser.write(b'<41>')
-    #     ser.write(b'<1-1>')
-    #     # ser.write(b'<31>')
-    #     # ser.write(b'<51>')
-    #     # ser.write(b'<61>')
-    #     last_time_12 = time_ctrl
-    #
-    # if pinch and mat_sum_sec[1, 0] > 800 and time_ctrl - last_time_12_inv > 0.1:
-    #     ser.write(b'<4-1>')
-    #     ser.write(b'<2-1>')
-    #     ser.write(b'<11>')
-    #     # ser.write(b'<3-1>')
-    #     # ser.write(b'<5-1>')
-    #     # ser.write(b'<6-1>')
-    #     last_time_12_inv = time_ctrl
-    # if time.time() - start > 5 and TO_MOVE:
-    #     ser.write(b'<220>')
-    #     ser.write(b'<450>')
-    #     TO_MOVE = False
-    #     TO_RELEASE = True
-    # if time.time() - start > 15 and TO_RELEASE:
-    #     ser.write(b'<>')
-    #     TO_RELEASE = False
-    print('frames {}, time {}ms'.format(i, round((time.time() - start_in) * 1000)))
-    return to_return
+           f4_ax3_mat_sum, f4_ax4_center_x, f4_ax4_center_y, f1_ax1_gaussian
 
 
 if __name__ == '__main__':
     # current time
-    # sudo chmod 666 /dev/ttyACM0
     timestr = time.strftime("%Y%m%d_%H%M%S")
     # parse the argumments
     parser = argparse.ArgumentParser()
-    parser.add_argument("-sp", "--serialport", default='/dev/ttyACM0',
-                        help="set serial port (default: COM6)")  # ubuntu: /dev/ttyACM0
-    parser.add_argument("-f", "--finger", default=0, type=int,
-                        help="set the finger to visualize")
-    parser.add_argument("-s", "--section", default=0, type=int,
-                        help="set the section to visualize")
+    parser.add_argument("-sp", "--serialport", default='COM6',
+                        help="set serial port (default: COM6)")
+    parser.add_argument("-l", "--locname", default='test',
+                        help="set location name where probe pressing, L1-L9, (default: L5)")
+    parser.add_argument("-p", "--datapoints", default=100, type=int,
+                        help="set number of data points to collect (default: 100)")
     # Read arguments from command line
     args = parser.parse_args()
-    SerialPort, finger, sec = args.serialport, \
-                              args.finger, \
-                              args.section
+    SerialPort, locname, DataPoints = args.serialport, \
+                                      args.locname, \
+                                      args.datapoints
     # creat a pandas DataFrame to store the data
     df_RAW = pd.DataFrame(columns=COLUMNS_RAW_FINGER_DATA)
     dt_list = []
@@ -283,12 +288,11 @@ if __name__ == '__main__':
         print('Serial Port Opened:\n', ser)
         ser.flushInput()
     # init position
-    # ser.write(b'<>')
+    ser.write(b'<>')
     time.sleep(1)
     # ser.write(b'<150>')
-    DataPoints = 2
-    finger_to_plot = [finger]
-    sec_to_plot = [sec]
+    finger_to_plot = [4]
+    sec_to_plot = [0]
     fig_list = {}
     ax1_scat_tri_mat_list = {}
     ax1_scat_pre_loc_list = {}
@@ -330,9 +334,7 @@ if __name__ == '__main__':
     init_values = collect_DataPoints(ser, DataPoints=300, starttime=start)
     avg = np.array(init_values).mean(axis=0, dtype=int)
 
-    # print('{}/{}'.format(n, DataPoints))
-    # collect init values for average
-
+    print('{}/{}'.format(n, DataPoints))
     # collect init values for average
 
     ani = FuncAnimation(fig_list[0], animate2,

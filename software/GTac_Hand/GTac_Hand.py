@@ -1,5 +1,4 @@
 import argparse
-import collections
 import copy
 import pickle
 import threading
@@ -17,8 +16,9 @@ from matplotlib import image as mpimg
 from tensorflow import keras
 
 import gtac_config
+from gtac_config import COLUMNS_RAW_FINGER_DATA
 from GTac_Data import gtac_data, gtac_data_analysis
-from data_gen import raw_data_byts_checkout_2, COLUMNS_RAW_FINGER_DATA
+from data_gen import raw_data_byts_checkout_2
 from gtac_config import fname_img
 from ur10_robot import main_ur10_thread
 
@@ -119,7 +119,8 @@ class gtac_hand:
             data_raw[:gtac_config.ALL_GTAC_NUM] = data_raw[:gtac_config.ALL_GTAC_NUM] - self.avg[
                                                                                         :gtac_config.ALL_GTAC_NUM]
         # reduce the FA-I noise from average, below zero.
-        data_raw[gtac_config.MAG_NUM:gtac_config.ALL_GTAC_NUM][data_raw[gtac_config.MAG_NUM:gtac_config.ALL_GTAC_NUM] < 0] = 0
+        data_raw[gtac_config.MAG_NUM:gtac_config.ALL_GTAC_NUM][data_raw[
+                                                               gtac_config.MAG_NUM:gtac_config.ALL_GTAC_NUM] < 0] = 0
         if sens_aft_ct:
             # Post-process: sensing after contact.
             data_raw, contacted_map, new_SA_II_ref = gtac_data.sensing_after_contact_post_process_data_frame(

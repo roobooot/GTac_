@@ -9,8 +9,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import serial
 import pandas as pd
-from data_gen_gp2 import raw_data_byts_checkout_2
-import copy
+from software.GTac_Sensor.data_gen_gp2 import raw_data_byts_checkout_2
 import collections
 from collections import deque
 import gtac_config_gp2
