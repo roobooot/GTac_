@@ -1,4 +1,4 @@
-# A Biomimetic Tactile Sensor (GTac) and the Integration with Robotics
+# A Biomimetic Tactile Sensor (GTac)
 
 ## General Introduction of this Repo
 
