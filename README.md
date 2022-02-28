@@ -1,12 +1,35 @@
-# GTac
-The code for collecting data from GTac, controlling robotics with integrated GTac and learning-based algorithms.
+# A Biomimetic Tactile Sensor (GTac) and the Integration with Robotics
 
-## GTac: A Biomimetic Tactile Sensor Design
-This section is to introduce GTac and its integration with robotics.
-For more information, please check out our paper.
+## General Introduction of this Repo
+
+A Biomimetic Design of HeteroGeneous Tactile Sensor (GTac) Providing Normal and Shear Force Feedback.
+
+This repo includes:
+
+<ul>
+  <li>the <a href="/software">code</a> 
+    <ul>
+      <li><a href="/software/arduino_lib">low-level controller</a> of GTac-Hand and GTac-Gripper</li>
+      <li><a href="/software/GTac_Sensor">collecting data from GTac</a></li>
+      <li>algorithms used for case study in papers, for instance, learning-based ECS recognition, handover controller, force-closed grasping, etc.</li>
+    </ul>
+</li>
+  <li>the <a href="/hardware">hardware design</a>.
+    <ul>
+      <li><a href="/hardware/PCB%20design">PCB design</a> of GTac, reading-out boards, and the motors driving boards.</li>
+      <li><a href="/hardware/Mechanical%20design">mechenical design</a> (CAD models)</li>
+    </ul>
+    </li>
+</ul>
+
+## Intended Publications
+
+### GTac: A Biomimetic Tactile Sensor Design
+This paper is to introduce the design, fabrication methods, and force sensing principles of GTac.
+For more information, please check out our paper below.
 
 
-Z. Lu, X. Gao, and H. Yu, “GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots,” arXiv:2201.12005 [cs], Jan. 2022. [Online]. Available: http://arxiv.org/abs/2201.12005
+Z. Lu, X. Gao, and H. Yu, “**GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots**,” arXiv:2201.12005 [cs], Jan. 2022. [Online]. Available: http://arxiv.org/abs/2201.12005
 
 <!---[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Pmd8PvLpeUA/0.jpg)](https://youtu.be/Pmd8PvLpeUA)--->
 <p align="center">
@@ -15,47 +38,6 @@ Z. Lu, X. Gao, and H. Yu, “GTac: A Biomimetic Tactile Sensor with Skin-like He
 </a>
 </p>
 
-## Minimum Requirement
-
-### Environment Requirement
-```
--Python3.6
-
--seaborn
-
--pandas
-
--tensorflow
-
--sklearn
-```
-### Hardware Requirement
-```
--Serial Port
-```
-## Quick setup
-Set  ```/software/``` as the root path of the project to run the code inside.
-### Serial port in Ubuntu
-```ruby
-//check serial port ID
-dmesg
-```
-```ruby
-//First check if you are a member of that group:
-groups ${USER}
-```
-This will list all the groups you belong to. If you don't belong to the dialout grup then add yourself to it, for example:
-```ruby
-sudo gpasswd --add ${USER} dialout
-```
-or
-```ruby
-sudo chmod 666 /dev/ttys0 (serial port ID in Windows)
-```
-### Real-time GTac feedback display
-```ruby
-python draw_line3.py f 0 s 0
-```
 ## Contact Information
 If you have any queries, do not hesitate to contact <a href="https://roobooot.github.io/">Zeyu Lu</a> (email: zeyu.lu@u.nus.edu).
 
