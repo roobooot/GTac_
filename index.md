@@ -12,13 +12,14 @@ This page is to introduce GTac and its integration with robotics.
     <a href="http://arxiv.org/abs/2201.12005">[Paper]</a>
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Sensor">[Code]</a>
     <a href="https://youtu.be/Pmd8PvLpeUA">[Video]</a>
-    <a href="https://github.com/roobooot/GTac_/tree/gh-pages/src/citations/gtac_sensor.txt">[Bibtex]</a>
+    <a href="./src/citations/gtac_sensor.txt">[Bibtex]</a>
 </p>
 
-<img width="600" src="https://github.com/roobooot/GTac_/tree/gh-pages/src/img/skin_inspired_white.png">
-<img width="600" src="https://github.com/roobooot/GTac_/tree/gh-pages/src/img/GTac_design.png">
+<img width="600" src="./src/img/skin_inspired_white.png">
+<img width="600" src="./src/img/GTac_design.png">
 
-![art text](https://github.com/roobooot/GTac_/tree/gh-pages/src/img/GTac_design.png)
+![art text](./src/img/skin_inspired_white.png)
+![art text](./src/img/GTac_design.png)
 
 
 <p align="center">
