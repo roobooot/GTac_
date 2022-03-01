@@ -21,5 +21,8 @@ Z. Lu, X. Gao, and H. Yu, “GTac: A Biomimetic Tactile Sensor with Skin-like He
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pmd8PvLpeUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
+
+<a href="/gtac_sensor.md">hardware design</a>
+
 ### Acknowledge
 This project is supervised by <a href="https://www.eng.nus.edu.sg/bme/staff/dr-yuhy/">Prof. Haoyong Yu</a> in Biorobotics Lab @NUS.
