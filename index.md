@@ -9,18 +9,19 @@ This page is to introduce GTac and its integration with robotics.
     <a href="http://arxiv.org/abs/2201.12005">[Paper]</a>
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Sensor">[Code]</a>
     <a href="https://www.youtube.com/embed/Pmd8PvLpeUA">[Video]</a>
+    <a href="https://github.com/roobooot/GTac_/tree/gh-pages/src/citations/gtac_sensor.txt">[Bibtex]</a>
 </p>
 
 
 
 <p align="center">
-  <img width="300" src="https://drive.google.com/uc?export=view&id=18ZXgVP_oYma_QvhO2UcUdRpGpyQ5F1Ca">
-  <img width="300" src="https://drive.google.com/uc?export=view&id=1UhIPShQG7EiOeA9gpRjAkz7wrkIqFRi1">
+  <img width="400" src="https://drive.google.com/uc?export=view&id=18ZXgVP_oYma_QvhO2UcUdRpGpyQ5F1Ca">
+  <img width="400" src="https://drive.google.com/uc?export=view&id=1UhIPShQG7EiOeA9gpRjAkz7wrkIqFRi1">
 </p>
 
 <p align="center">
-  <img width="300" src="https://drive.google.com/uc?export=view&id=1aQ2NSfkCrT3J8-DGPrus0C6L7GOWf3Mm">
-  <img width="300" src="https://drive.google.com/uc?export=view&id=1Pc_KfLZHII-z81Vra8E6M02PIMsqSe_Z">
+  <img width="400" src="https://drive.google.com/uc?export=view&id=1aQ2NSfkCrT3J8-DGPrus0C6L7GOWf3Mm">
+  <img width="400" src="https://drive.google.com/uc?export=view&id=1Pc_KfLZHII-z81Vra8E6M02PIMsqSe_Z">
 </p>
 
 > Abstract—Human hands can effectively perform daily activities, such as grasping 
