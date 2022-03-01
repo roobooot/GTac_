@@ -27,6 +27,7 @@ This repo includes:
 ### GTac: A Biomimetic Tactile Sensor Design
 This paper is to introduce the design, fabrication methods, and force sensing principles of GTac.
 For more information, please check out our paper below.
+<img width="400" src="https://drive.google.com/uc?export=view&id=18ZXgVP_oYma_QvhO2UcUdRpGpyQ5F1Ca">
 
 
 Z. Lu, X. Gao, and H. Yu, “**GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots**,” arXiv:2201.12005 [cs], Jan. 2022. [Online]. Available: http://arxiv.org/abs/2201.12005
@@ -43,7 +44,6 @@ Authors: Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong 
 
 <img src="https://drive.google.com/uc?export=view&id=1BELUppySDUipSWb91n5G-HhWKfFflT3P">
 
-<img width="400" src="https://drive.google.com/uc?export=view&id=18ZXgVP_oYma_QvhO2UcUdRpGpyQ5F1Ca">
 
 
 Abstract—Human hands can effectively perform daily activities,
