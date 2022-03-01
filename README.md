@@ -1,8 +1,6 @@
-# A Biomimetic Tactile Sensor (GTac)
+# A Biomimetic Design of HeteroGeneous Tactile Sensor (GTac) Providing Normal and Shear Force Feedback
 
-## General Introduction of this Repo
-
-A Biomimetic Design of HeteroGeneous Tactile Sensor (GTac) Providing Normal and Shear Force Feedback.
+## General Introduction
 
 This repo includes:
 
@@ -22,20 +20,23 @@ This repo includes:
     </li>
 </ul>
 
-## Intended Publications
+## Papers in Submission
 
-### GTac: A Biomimetic Tactile Sensor Design
+### GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots
+
 This paper is to introduce the design, fabrication methods, and force sensing principles of GTac.
 For more information, please check out our paper below.
-<img width="400" src="https://drive.google.com/uc?export=view&id=18ZXgVP_oYma_QvhO2UcUdRpGpyQ5F1Ca">
 
+<p align="center">
+  <img width="400" src="https://drive.google.com/uc?export=view&id=18ZXgVP_oYma_QvhO2UcUdRpGpyQ5F1Ca">
+</p>
 
 Z. Lu, X. Gao, and H. Yu, “**GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots**,” arXiv:2201.12005 [cs], Jan. 2022. [Online]. Available: http://arxiv.org/abs/2201.12005
 
 <!---[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Pmd8PvLpeUA/0.jpg)](https://youtu.be/Pmd8PvLpeUA)--->
 <p align="center">
 <a href="https://youtu.be/Pmd8PvLpeUA">
-  <img  align="center"  src="http://img.youtube.com/vi/Pmd8PvLpeUA/0.jpg" alt="GTac">
+  <img  align="center" src="http://img.youtube.com/vi/Pmd8PvLpeUA/0.jpg" alt="GTac">
 </a>
 </p>
 
@@ -43,7 +44,6 @@ Z. Lu, X. Gao, and H. Yu, “**GTac: A Biomimetic Tactile Sensor with Skin-like 
 Authors: Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu
 
 <img src="https://drive.google.com/uc?export=view&id=1BELUppySDUipSWb91n5G-HhWKfFflT3P">
-
 
 
 Abstract—Human hands can effectively perform daily activities,
