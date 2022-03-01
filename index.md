@@ -13,6 +13,8 @@ This page is to introduce GTac and its integration with robotics.
 </p>
 
 
+<img width="600" src="https://github.com/roobooot/GTac_/tree/gh-pages/src/img/skin_inspired_white.png">
+
 
 <p align="center">
   <img width="400" src="https://drive.google.com/uc?export=view&id=18ZXgVP_oYma_QvhO2UcUdRpGpyQ5F1Ca">
