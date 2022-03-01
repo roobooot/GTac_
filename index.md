@@ -8,18 +8,24 @@ This page is to introduce GTac and its integration with robotics.
 
 <a href="https://roobooot.github.io/">Zeyu Lu</a>, Xingyu Gao, <a href="https://cde.nus.edu.sg/bme/staff/dr-yuhy/">Haoyong Yu</a>
 
-<p align="left">
+
+
+<p align="center">
+<img width="300" src="./src/img/skin_inspired_white.png">
+<img width="300" src="./src/img/GTac_design.png">
+</p>
+
+<p align="center">
     <a href="http://arxiv.org/abs/2201.12005">[Paper]</a>
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Sensor">[Code]</a>
+    <a href="./gtac_sensor.html">[Website]</a>
     <a href="https://youtu.be/Pmd8PvLpeUA">[Video]</a>
     <a href="./src/citations/gtac_sensor.txt">[Bibtex]</a>
 </p>
 
-<img width="600" src="./src/img/skin_inspired_white.png">
-<img width="600" src="./src/img/GTac_design.png">
+[comment]: <> (![art text]&#40;./src/img/skin_inspired_white.png&#41;)
 
-![art text](./src/img/skin_inspired_white.png)
-![art text](./src/img/GTac_design.png)
+[comment]: <> (![art text]&#40;./src/img/GTac_design.png&#41;)
 
 
 <p align="center">

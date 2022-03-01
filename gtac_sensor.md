@@ -9,8 +9,8 @@
     <a href="https://github.com/roobooot/GTac_/tree/gh-pages/src/citations/gtac_sensor.txt">[Bibtex]</a>
 </p>
 
-<img width="600" src="https://github.com/roobooot/GTac_/tree/gh-pages/src/img/skin_inspired_white.png">
-<img width="600" src="https://github.com/roobooot/GTac_/tree/gh-pages/src/img/GTac_design.png">
+<img width="300" src="https://github.com/roobooot/GTac_/tree/gh-pages/src/img/skin_inspired_white.png">
+<img width="300" src="https://github.com/roobooot/GTac_/tree/gh-pages/src/img/GTac_design.png">
 
 ![art text](https://github.com/roobooot/GTac_/tree/gh-pages/src/img/GTac_design.png)
 
