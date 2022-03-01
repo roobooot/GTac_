@@ -14,8 +14,8 @@ Zeyu Lu, Xingyu Gao, Haoyong Yu
 
 
 <p align="center">
-<img width="300" src="./src/img/skin_inspired_white.png">
-<img width="300" src="./src/img/GTac_design.png">
+<img height="200" src="./src/img/skin_inspired_white.png">
+<img height="200" src="./src/img/GTac_design.png">
 </p>
 
 <p align="center">
@@ -38,13 +38,13 @@ Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu
 </p>
 
 <p align="center">
-<img width="600" src="./src/img/gtac_hand_rendering_0.JPG">
-<img width="600" src="./src/img/gtac_hand_rendering_1.png">
+<img height="200" src="./src/img/gtac_hand_rendering_0.JPG">
+<img height="200" src="./src/img/gtac_hand_rendering_1.png">
 </p>
 
 <p align="center">
-<img width="600" src="./src/img/ECS_explain_white_BG.png">
-<img width="600" src="./src/img/ECS_recog_confusion_mat.png">
+<img height="200" src="./src/img/ECS_explain_white_BG.png">
+<img height="200" src="./src/img/ECS_recog_confusion_mat.png">
 </p>
 
 
@@ -67,12 +67,12 @@ Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
 </p>
 
 <p align="center">
-<img width="300" src="./src/img/gtac_gripper_mode.png">
-<img width="300" src="./src/img/gtac_sensing_white.png">
+<img height="200" src="./src/img/gtac_gripper_mode.png">
+<img height="200" src="./src/img/gtac_sensing_white.png">
 </p>
 
 <p align="center">
-<img width="600" src="./src/img/fig_reconfigurable_mech.png">
+<img height="200" src="./src/img/fig_reconfigurable_mech.png">
 </p>
 
 <p align="center">
