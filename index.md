@@ -69,7 +69,7 @@ tasks, such as delicate object grasping, object handovers, and ball-hit recognit
 }
 ```
 
-<a href="./gtac_sensor.md">Link to GTac Sensor</a>
+<a href="./gtac_sensor.html">Link to GTac Sensor</a>
 
 --------------------------------
 
