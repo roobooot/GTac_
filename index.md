@@ -70,7 +70,6 @@ Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
 
 <p align="center">
 <img height="200" src="./src/img/gtac_gripper_mode.png">
-
 </p>
 
 <p align="center">
