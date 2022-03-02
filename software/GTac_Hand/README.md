@@ -1,30 +1,7 @@
-# GTac
+# GTac-Hand
 The code for collecting data from GTac, controlling robotics with integrated GTac and learning-based algorithms.
 
-## GTac: A Biomimetic Tactile Sensor Design
-This section is to introduce GTac and its integration with robotics.
-For more information, please check out our paper.
 
-
-Z. Lu, X. Gao, and H. Yu, “GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots,” arXiv:2201.12005 [cs], Jan. 2022. [Online]. Available: http://arxiv.org/abs/2201.12005
-
-<!---[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Pmd8PvLpeUA/0.jpg)](https://youtu.be/Pmd8PvLpeUA)--->
-<p align="center">
-<a href="https://youtu.be/Pmd8PvLpeUA">
-  <img  align="center"  src="http://img.youtube.com/vi/Pmd8PvLpeUA/0.jpg" alt="video">
-</a>
-</p>
-
-```
-@misc{lu2022gtac,
-      title={GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots}, 
-      author={Zeyu Lu and Xingyu Gao and Haoyong Yu},
-      year={2022},
-      eprint={2201.12005},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
-}
-```
 ## Minimum Requirement
 
 ### Environment Requirement
