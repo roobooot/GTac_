@@ -4,7 +4,6 @@ This page is to list the papers about GTac and its integration with robotics, fo
 ---------------------------------
 ## Papers 
 
-----------------------------------------
 
 ### GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots
 
@@ -73,8 +72,8 @@ Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
 </p>
 
 <p align="center">
-<img height="300" src="./src/img/gtac_sensing_white.png">
-<img height="250" src="./src/img/fig_reconfigurable_mech.png">
+<img height="200" src="./src/img/gtac_sensing_white.png">
+<img height="200" src="./src/img/fig_reconfigurable_mech.png">
 </p>
 
 <p align="center">
