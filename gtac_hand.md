@@ -6,16 +6,22 @@
 <a href="https://wiki.nus.edu.sg/display/biorobotics/2020/10/01/Shounak+Bhattacharya">Shounak Bhattacharya</a>, 
 <a href="https://cde.nus.edu.sg/bme/staff/dr-yuhy/">Haoyong Yu</a>
 
-<p align="left">
-    <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Hand">[Code]</a>
+
+
+
+<p align="center">
+<img height="200" src="./src/img/gtac_hand_rendering_0.JPG">
+<img height="200" src="./src/img/gtac_hand_rendering_1.png">
 </p>
 
+<p align="center">
+<img height="200" src="./src/img/ECS_explain_white_BG.png">
+<img height="200" src="./src/img/ECS_recog_confusion_mat.png">
+</p>
 
-<img width="600" src="https://github.com/roobooot/GTac_/tree/gh-pages/src/img/skin_inspired_white.png">
-<img width="600" src="https://github.com/roobooot/GTac_/tree/gh-pages/src/img/GTac_design.png">
-
-![art text](https://github.com/roobooot/GTac_/tree/gh-pages/src/img/GTac_design.png)
-
+<p align="center">
+    <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Hand">[Code]</a>
+</p>
 
 > Abstract—Human hands can effectively perform daily activities,
 such as grasping and handovers of fragile objects,

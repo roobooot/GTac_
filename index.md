@@ -1,9 +1,11 @@
-# Tactile Sensing for Robotics
-This page is to introduce GTac and its integration with robotics.
+# A Biomimetic Tactile Sensor Design
+This page is to list the papers about GTac and its integration with robotics, for instance, GTac-Hand and GTac-Gripper.
 
+---------------------------------
 ## Papers 
 
---------------------
+----------------------------------------
+
 ### GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots
 
 <p align="center">
@@ -14,8 +16,8 @@ Zeyu Lu, Xingyu Gao, Haoyong Yu
 
 
 <p align="center">
-<img height="200" src="./src/img/skin_inspired_white.png">
-<img height="200" src="./src/img/GTac_design.png">
+<img height="100" src="./src/img/skin_inspired_white.png">
+<img height="150" src="./src/img/GTac_design.png">
 </p>
 
 <p align="center">
@@ -38,13 +40,14 @@ Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu
 </p>
 
 <p align="center">
-<img height="200" src="./src/img/gtac_hand_rendering_0.JPG">
+
+[comment]: <> (<img height="200" src="./src/img/gtac_hand_rendering_0.JPG">)
 <img height="200" src="./src/img/gtac_hand_rendering_1.png">
 </p>
 
 <p align="center">
-<img height="200" src="./src/img/ECS_explain_white_BG.png">
-<img height="200" src="./src/img/ECS_recog_confusion_mat.png">
+<img height="250" src="./src/img/ECS_explain_white_BG.png">
+<img height="250" src="./src/img/ECS_recog_confusion_mat.png">
 </p>
 
 
@@ -84,4 +87,11 @@ Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
 
 -----------------------------
 ### Acknowledge
-This project is supervised by <a href="https://www.eng.nus.edu.sg/bme/staff/dr-yuhy/">Prof. Haoyong Yu</a> in Biorobotics Lab @NUS.
+This project is supervised by <a href="https://www.eng.nus.edu.sg/bme/staff/dr-yuhy/">Prof. Haoyong Yu</a> in Biorobotics Lab @NUS. This work was supported by Agency for Science, Technology and
+Research, Singapore, under the National Robotics Program, with A*star
+SERC Grant No.: 192 25 00054.
+
+<p align="center">
+<img height="150" src="https://www.nus.edu.sg/images/default-source/identity-images/NUS_logo_full-horizontal.jpg">
+<img height="150" src="https://drive.google.com/uc?export=view&id=1Cqy7TcEdQhd3ei9ZWByqffgxWaIrCbbO">
+</p>
