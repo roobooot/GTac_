@@ -44,7 +44,7 @@ Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu
 
 
 <p align="center">
-<img height="200" src="./src/img/gtac_hand_rendering_1.png">
+<img height="300" src="./src/img/gtac_hand_rendering_1.png">
 <img height="250" src="./src/img/ECS_explain_white_BG.png">
 <img height="250" src="./src/img/ECS_recog_confusion_mat.png">
 </p>
@@ -69,12 +69,12 @@ Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
 </p>
 
 <p align="center">
-<img height="200" src="./src/img/gtac_gripper_mode.png">
+<img height="250" src="./src/img/gtac_gripper_mode.png">
 </p>
 
 <p align="center">
 <img height="300" src="./src/img/gtac_sensing_white.png">
-<img height="200" src="./src/img/fig_reconfigurable_mech.png">
+<img height="250" src="./src/img/fig_reconfigurable_mech.png">
 </p>
 
 <p align="center">
