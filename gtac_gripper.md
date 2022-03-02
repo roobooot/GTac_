@@ -51,6 +51,10 @@ Conceptualization: Z.L., H.G., and H.Y.
 
 Methodology: Z.L., H.G., and H.Y.
 
+Electronic Parts: Z.L. and H.G.
+
+Mechanical Parts: H.G. and Z.L.
+
 Investigation: Z.L. and H.G. 
 
 Visualization: Z.L., H.G., and W.Z. 
