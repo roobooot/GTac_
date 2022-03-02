@@ -1,12 +1,13 @@
 ### GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots
 
+<p align="center">
 <a href="https://roobooot.github.io/">Zeyu Lu</a>, Xingyu Gao, <a href="https://cde.nus.edu.sg/bme/staff/dr-yuhy/">Haoyong Yu</a>
-
+</p>
 
 
 <p align="center">
-<img width="300" src="./src/img/skin_inspired_white.png">
-<img width="300" src="./src/img/GTac_design.png">
+<img height="200" src="./src/img/skin_inspired_white.png">
+<img height="200" src="./src/img/GTac_design.png">
 </p>
 
 <p align="center">
