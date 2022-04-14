@@ -24,19 +24,17 @@ Set  ```/software/``` as the root path of the project to run the code inside.
 //check serial port ID
 dmesg
 ```
-```ruby
-//First check if you are a member of that group:
-groups ${USER}
-```
-This will list all the groups you belong to. If you don't belong to the dialout grup then add yourself to it, for example:
-```ruby
-sudo gpasswd --add ${USER} dialout
-```
 or
 ```ruby
-sudo chmod 666 /dev/ttys0 (serial port ID in Windows)
+sudo chmod 666 /dev/ttys0 
 ```
-### Real-time GTac feedback display
+serial port ID in Windows example
 ```ruby
-python draw_line3.py f 0 s 0
+sudo chmod 666 /dev/ttyACM0 
+```
+serial port ID in Ubuntu example
+### Real-time GTac feedback display
+For instance, if the serial port is ```/dev/ttyACM0```, the GTac signals can be visualized by the following command
+```ruby
+python draw_line3.py f 0 s 0 -sp /dev/ttyACM0
 ```
