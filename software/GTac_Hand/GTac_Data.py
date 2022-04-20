@@ -169,6 +169,13 @@ class gtac_data:
                                                                                 self.num_frames)),
                                                  self.feature_SA_event])
         # print(1)
+    @staticmethod
+    def find_mat_value(data_frame_array, finger, sec, r, c):
+        index = sec * 4 * 20 + finger * 4 + \
+                gtac_config.MAT_ORIENT_COL[finger, sec, r, c] * 20 + \
+                gtac_config.MAT_ORIENT_ROW[finger, sec, r, c]
+        return index, data_frame_array[index + gtac_config.MAG_NUM]
+
 
     def cal_FAI_sum_press_loc(self):
         for i, data_frame_array in enumerate(self.data_seq):

@@ -1,3 +1,4 @@
+# this configuration file is for GTac-Gripper.
 import numpy as np
 import sklearn
 
@@ -105,16 +106,16 @@ LF_MAT_COL = np.array([[0, 1, 3, 2], [0, 1, 3, 2], [0, 1, 3, 2], [0, 1, 3, 2]])
 UP_MAT_ROW = np.array([[2, 3, 1, 0], [2, 3, 1, 0], [2, 3, 1, 0], [2, 3, 1, 0]])
 UP_MAT_COL = np.array([[2, 2, 2, 2], [3, 3, 3, 3], [1, 1, 1, 1], [0, 0, 0, 0]])
 
-MAT_ORIENT_ROW = np.array([[UP_MAT_ROW, UP_MAT_ROW, LF_MAT_ROW],
-                           [LF_MAT_ROW, RF_MAT_ROW, RF_MAT_ROW],
+MAT_ORIENT_ROW = np.array([[LF_MAT_ROW, LF_MAT_ROW, LF_MAT_ROW],
+                           [RF_MAT_ROW, LF_MAT_ROW, LF_MAT_ROW],
                            [RF_MAT_ROW, RF_MAT_ROW, RF_MAT_ROW],
-                           [LF_MAT_ROW, RF_MAT_ROW, RF_MAT_ROW],
-                           [RF_MAT_ROW, RF_MAT_ROW, RF_MAT_ROW]])
-MAT_ORIENT_COL = np.array([[UP_MAT_COL, UP_MAT_COL, LF_MAT_COL],
-                           [LF_MAT_COL, RF_MAT_COL, RF_MAT_COL],
+                           [LF_MAT_ROW, LF_MAT_ROW, LF_MAT_ROW],
+                           [RF_MAT_ROW, LF_MAT_ROW, LF_MAT_ROW]])
+MAT_ORIENT_COL = np.array([[LF_MAT_COL, LF_MAT_COL, LF_MAT_COL],
+                           [RF_MAT_COL, LF_MAT_COL, LF_MAT_COL],
                            [RF_MAT_COL, RF_MAT_COL, RF_MAT_COL],
-                           [LF_MAT_COL, RF_MAT_COL, RF_MAT_COL],
-                           [RF_MAT_COL, RF_MAT_COL, RF_MAT_COL]])
+                           [LF_MAT_COL, LF_MAT_COL, LF_MAT_COL],
+                           [RF_MAT_COL, LF_MAT_COL, LF_MAT_COL]])
 
 MAG_NUM = 45
 MAT_NUM = 16
@@ -124,8 +125,12 @@ COL_NUM = 12
 FINGER_NUM = 5
 SEC_NUM = 3
 FINGER_NAME = ['THUMB', 'INDEX', 'MIDDLE', 'RING', 'LITTLE']
-SEC_NAME = ['Proximal', 'Middle', 'Distal']
+SEC_NAME = ['Palm', 'Middle', 'Distal']
 FINGER_MOTOR = ['Thumb Fle', 'Thumb Abd', 'Middle', 'Index', 'Little', 'Ring']
+
+SENSOR_MAP = [0, 4, 3, 1]
+MOTOR_MAP = [[1, 5], [2, 6], [3, 7], [4, 8]]
+MOTOR_NUM = 8
 FINGER_FLEX_MOTOR_IND = [0, 3, 2, 5, 4]
 SA_II_preprocess_x = [[1, 1, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]
 SA_II_preprocess_y = []

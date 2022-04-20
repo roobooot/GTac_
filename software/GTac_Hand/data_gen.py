@@ -122,7 +122,7 @@ def raw_data_byts_checkout_2(ser, verbose=True):
             #     x = 0
             data.append(x)
             # print(ser.read())
-
+    data = np.array(data)
     if verbose:
         print('Raw GTac Data:{}'.format(data))
         print('Length:{}'.format(len(data)))
@@ -142,8 +142,9 @@ def collect_DataPoints(ser, DataPoints, starttime):
     while (i < DataPoints):
         data = raw_data_byts_checkout_2(ser, verbose=False)
         ms = int(round((time.time() - starttime) * 1000))
-        data.append(ms)
-        data = gtac_data.preprocess_(data)
+        # data.append(ms)
+        data = np.append(data, ms)
+        # data = gtac_data.preprocess_(data)
         dt_list.append(data)
         i = i + 1
     return dt_list[-100:]

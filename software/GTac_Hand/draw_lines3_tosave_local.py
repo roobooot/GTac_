@@ -186,13 +186,15 @@ def animate2(i):
     print(i)
     global TO_MOVE, TO_RELEASE, pinch, time_thumb_fle, last_time_12, last_time_12_inv
     start_in = time.time()
-    data = raw_data_byts_checkout_2(ser, verbose=False)
+    data = raw_data_byts_checkout_2(ser, verbose=True)
     ms = int(round((time.time() - start) * 1000))
-    # data.append(ms)
     data = np.append(data, ms)
     # data = gtac_data.preprocess_(data)
     # dt_list.append(data)
     data_frame_array = data - avg  # average by the initial data
+    print('avg:')
+    print(avg)
+    print(data_frame_array)
     to_return = []
     for f_ind, f in enumerate(finger_to_plot):
         for s_ind, s in enumerate(sec_to_plot):
@@ -215,48 +217,47 @@ def animate2(i):
             to_return.append(ax3_mat_sum_list[ind])
             to_return.append(ax4_center_x_list[ind])
             to_return.append(ax4_center_y_list[ind])
-
-    # control the fingers to grasp
-    # pinch,time_thumb_fle,last_time_12,last_time_12_inv = reactive_pinch(data_frame_array,ser,
-    #                pinch,time_thumb_fle,last_time_12,last_time_12_inv)
-    # mat_sum_sec = find_mat_sum_sec(data_frame_array,
-    #                                mat_th=50,
-    #                                verbose=False)
-    # if mat_sum_sec[2, 0] > 50 and not pinch:
-    #     pinch = True
-    # # creat current time stamp
-    # time_ctrl = time.time()
-    # if pinch and mat_sum_sec[0, 2] < 300 and time_ctrl - time_thumb_fle > 0.05:
-    #     ser.write(b'<21>')
-    #     time_thumb_fle = time_ctrl
-    #
-    # if pinch and mat_sum_sec[1, 0] < 600 and time_ctrl - last_time_12 > 0.1:
-    #     ser.write(b'<41>')
-    #     ser.write(b'<1-1>')
-    #     # ser.write(b'<31>')
-    #     # ser.write(b'<51>')
-    #     # ser.write(b'<61>')
-    #     last_time_12 = time_ctrl
-    #
-    # if pinch and mat_sum_sec[1, 0] > 800 and time_ctrl - last_time_12_inv > 0.1:
-    #     ser.write(b'<4-1>')
-    #     ser.write(b'<2-1>')
-    #     ser.write(b'<11>')
-    #     # ser.write(b'<3-1>')
-    #     # ser.write(b'<5-1>')
-    #     # ser.write(b'<6-1>')
-    #     last_time_12_inv = time_ctrl
-    # if time.time() - start > 5 and TO_MOVE:
-    #     ser.write(b'<220>')
-    #     ser.write(b'<450>')
-    #     TO_MOVE = False
-    #     TO_RELEASE = True
-    # if time.time() - start > 15 and TO_RELEASE:
-    #     ser.write(b'<>')
-    #     TO_RELEASE = False
     print('frames {}, time {}ms'.format(i, round((time.time() - start_in) * 1000)))
     return to_return
 
+
+def animate_local(i):
+    print(i)
+    global TO_MOVE, TO_RELEASE, pinch, time_thumb_fle, last_time_12, last_time_12_inv
+    start_in = time.time()
+    # data = raw_data_byts_checkout_2(ser, verbose=False)
+    data = data_pd.iloc[i, :]
+    # ms = int(round((time.time() - start) * 1000))
+    # data = np.append(data, ms)
+    data = np.array(data)
+    # data = gtac_data.preprocess_(data)
+    # dt_list.append(data)
+    print('data: {} '.format(data))
+    data_frame_array = data  # average by the initial data
+    to_return = []
+    for f_ind, f in enumerate(finger_to_plot):
+        for s_ind, s in enumerate(sec_to_plot):
+            update_vals(data_frame_array, finger=f, sec=s)
+            ind = f_ind * len(sec_to_plot) + s_ind
+            # print(ind)
+            set_data_sec(ax1_scat_tri_mat_list[ind],
+                         ax1_scat_pre_loc_list[ind],
+                         ax2_magx_list[ind],
+                         ax2_magy_list[ind],
+                         ax2_magz_list[ind],
+                         ax3_mat_sum_list[ind],
+                         ax4_center_x_list[ind],
+                         ax4_center_y_list[ind])
+            to_return.append(ax1_scat_tri_mat_list[ind])
+            to_return.append(ax1_scat_pre_loc_list[ind])
+            to_return.append(ax2_magx_list[ind])
+            to_return.append(ax2_magy_list[ind])
+            to_return.append(ax2_magz_list[ind])
+            to_return.append(ax3_mat_sum_list[ind])
+            to_return.append(ax4_center_x_list[ind])
+            to_return.append(ax4_center_y_list[ind])
+    print('frames {}, time {}ms'.format(i, round((time.time() - start_in) * 1000)))
+    return to_return
 
 if __name__ == '__main__':
     # current time
@@ -270,25 +271,47 @@ if __name__ == '__main__':
                         help="set the finger to visualize")
     parser.add_argument("-s", "--section", default=0, type=int,
                         help="set the section to visualize")
+    parser.add_argument("-fn", "--filename", help="set filename to analyze")
+    parser.add_argument("-r", "--remark", default='test', help="set remark for video filename to save")
+    parser.add_argument("-l", "--local", default=0, type=int,
+                        help="choose if load local data")
     # Read arguments from command line
     args = parser.parse_args()
-    SerialPort, finger, sec = args.serialport, \
+    SerialPort, finger, sec, filename, local, remark = args.serialport, \
                               args.finger, \
-                              args.section
+                              args.section, args.filename, args.local, args.remark
     # creat a pandas DataFrame to store the data
     df_RAW = pd.DataFrame(columns=COLUMNS_RAW_FINGER_DATA)
     dt_list = []
 
-    ser = serial.Serial(SerialPort, 115200)
-    time.sleep(0.5)
-    if ser.is_open:
-        print('Serial Port Opened:\n', ser)
-        ser.flushInput()
-    # init position
-    # ser.write(b'<>')
-    time.sleep(1)
-    # ser.write(b'<150>')
-    DataPoints = 2
+    if local == 1:
+        # read the local dataset
+        data_pd = pd.read_csv(filename, index_col=0, skiprows=0)
+        # data_pd = data_pd.iloc[-1000:, :]
+        DataPoints = len(data_pd)
+    else:
+        # read in real-time
+        DataPoints = 2
+        ser = serial.Serial(SerialPort, 115200)
+        time.sleep(0.5)
+        if ser.is_open:
+            print('Serial Port Opened:\n', ser)
+            ser.flushInput()
+        # init position
+        # ser.write(b'<>')
+        time.sleep(1)
+        # ser.write(b'<150>')
+        start = time.time()
+        TO_MOVE = True
+        TO_RELEASE = True
+        pinch = False
+        time_thumb_fle = 0
+        last_time_12 = 0
+        last_time_12_inv = 0
+        n = 0
+        init_values = collect_DataPoints(ser, DataPoints=300, starttime=start)
+        avg = np.array(init_values).mean(axis=0, dtype=int)
+
     finger_to_plot = [finger]
     sec_to_plot = [sec]
     fig_list = {}
@@ -321,25 +344,22 @@ if __name__ == '__main__':
     # line = axes[0].plot(mag_x, mag_y,animated=True)
     # fig = plt.figure()
     # line = plt.plot(mag_x,mag_y)
-    start = time.time()
-    TO_MOVE = True
-    TO_RELEASE = True
-    pinch = False
-    time_thumb_fle = 0
-    last_time_12 = 0
-    last_time_12_inv = 0
-    n = 0
-    init_values = collect_DataPoints(ser, DataPoints=300, starttime=start)
-    avg = np.array(init_values).mean(axis=0, dtype=int)
 
     # print('{}/{}'.format(n, DataPoints))
     # collect init values for average
 
     # collect init values for average
 
-    ani = FuncAnimation(fig_list[0], animate2,
-                        frames=DataPoints,
-                        interval=1, blit=True)
+    if local == 0:
+        ani = FuncAnimation(fig_list[0], animate2,
+                            frames=DataPoints,
+                            interval=1, blit=True)
+    else:
+        ani = FuncAnimation(fig_list[0], animate_local,
+                            frames=DataPoints,
+                            interval=6.6, blit=True)
+        ani.save('video/' + remark + '_f_' + str(finger) + '_s_' + str(sec) + '.mp4',
+                 writer="ffmpeg")
     # init position
     # ser.write(b'<>')
     # plt.tight_layout()
