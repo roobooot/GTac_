@@ -46,7 +46,7 @@ class gtac_gripper:
         self.SA_II_ref = np.zeros((gtac_config.MAG_NUM))
         self.dt_list = []  # to save
         self.save = save
-        save_path = 'data/case_study/'
+        save_path = 'data/'
         timestr = time.strftime("%Y%m%d_%H%M%S")
         self.filename = save_path + remarks + '_' + \
                    str(data_points) + '_GTAC_Gripper' + \
