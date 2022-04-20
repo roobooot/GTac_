@@ -13,8 +13,9 @@
 
 -sklearn
 ```
-### Hardware Requirement
+### System Requirement
 ```
+-Linus (Ubuntu 18.04 tested)
 -Serial Port
 ```
 ## Quick setup
@@ -39,6 +40,10 @@ f: 0,1,2,3,4 (thumb, index, middle, ring, little)
 s: 0,1,2 (proximal, middle, distal)
 ```
 ### Real-time GTac feedback display
+go to
+```
+software/GTac_Hand/
+```
 For instance, if the serial port is ```/dev/ttyACM0```, the GTac signals can be visualized by the following command
 ```ruby
 python draw_line3.py f 0 s 0 -sp /dev/ttyACM0
@@ -56,6 +61,10 @@ python draw_lines3_tosave_local.py -f 2 -s 0 -fn data/case_study/test_sensor_300
 -fn: filename of data to be displayed
 ```
 ### Save data
+go to
+```
+software/GTac_Hand/
+```
 ```ruby
 python GTac_sensor.py -s 1 -d 300 -r test_sensor -sp /dev/ttyACM0
 ```
