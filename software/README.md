@@ -46,7 +46,7 @@ software/GTac_Hand/
 ```
 For instance, if the serial port is ```/dev/ttyACM0```, the GTac signals can be visualized by the following command
 ```ruby
-python draw_line3.py f 0 s 0 -sp /dev/ttyACM0
+python draw_line3.py -f 0 -s 0 -sp /dev/ttyACM0
 ```
 or
 ```ruby
