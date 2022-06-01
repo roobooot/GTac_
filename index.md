@@ -8,7 +8,7 @@ This page is to list the papers about GTac and its integration with robotics, fo
 ### GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots
 
 <p align="center">
-Zeyu Lu, Xingyu Gao, Haoyong Yu
+Zeyu Lu, Xingyu Gao, and Haoyong Yu
 </p>
 
 
@@ -62,9 +62,12 @@ Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu
 ---------------------------------------------------
 
 
-### GTac-Gripper: A Four-fingered Robotic Gripper with Reconfigurable Mechanism and Biomimetic Tactile Sensing Capabilities
+### GTac-Gripper: A Reconfigurable Under-actuated Four-fingered Robotic Gripper with Tactile Sensing
 <p align="center">
 Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
+</p>
+<p align="center">
+Accepted by IEEE RA-L (2022)
 </p>
 
 <p align="center">
