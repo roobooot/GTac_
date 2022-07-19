@@ -1,8 +1,9 @@
-@misc{lu2022gtac,
-      title={GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots},
-      author={Zeyu Lu and Xingyu Gao and Haoyong Yu},
-      year={2022},
-      eprint={2201.12005},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
-}
+@ARTICLE{9794929,
+  author={Lu, Zeyu and Gao, Xingyu and Yu, Haoyong},
+  journal={IEEE Sensors Journal}, 
+  title={GTac: A Biomimetic Tactile Sensor With Skin-Like Heterogeneous Force Feedback for Robots}, 
+  year={2022},
+  volume={22},
+  number={14},
+  pages={14491-14500},
+  doi={10.1109/JSEN.2022.3181128}}
