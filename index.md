@@ -23,7 +23,7 @@ Zeyu Lu, Xingyu Gao, and Haoyong Yu
 </p>
 
 <p align="center">
-    <a href="http://arxiv.org/abs/2201.12005">[Paper]</a>
+    <a href="https://doi.org/10.1109/JSEN.2022.3181128">[Paper]</a>
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Sensor">[Code]</a>
     <a href="./gtac_sensor.html">[Website]</a>
     <a href="https://youtu.be/Pmd8PvLpeUA">[Video]</a>
@@ -80,7 +80,9 @@ Accepted by IEEE RA-L (2022)
 </p>
 
 <p align="center">
+    <a href="https://doi-org.libproxy1.nus.edu.sg/10.1109/LRA.2022.3181370">[Paper]</a>
     <a href="./gtac_gripper.html">[Website]</a>
+    <a href="https://youtu.be/44X5uXroEYc">[Video]</a>
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Hand">[Code]</a>
 </p>
 
