@@ -1,4 +1,4 @@
-### GTac-Gripper: A Reconfigurable Under-actuated Four-fingered Robotic Gripper with Tactile Sensing
+### GTac-Gripper: A Reconfigurable Under-Actuated Four-Fingered Robotic Gripper with Tactile Sensing
 
 <a href="https://roobooot.github.io/">Zeyu Lu</a>, 
 <a href="https://wiki.nus.edu.sg/display/biorobotics/2021/01/13/Guo+Haotian">Haotian Guo</a>, 
@@ -16,11 +16,11 @@ Wensi Zhang,
 </p>
 
 <p align="center">
+    <a href="https://doi.org/10.1109/LRA.2022.3181370">[Paper]</a>
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Gripper">[Code]</a>
+    <a href="https://youtu.be/44X5uXroEYc">[Video]</a>
+    <a href="https://drive.google.com/file/d/1L_ox6iwC_qF6Yhz8cgCkkZ46yHV4SpWS/view">[pdf]</a>
 </p>
-
-
-
 
 
 #### Acknowledgement
