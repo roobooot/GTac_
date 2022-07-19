@@ -34,7 +34,7 @@ Zeyu Lu, Xingyu Gao, and Haoyong Yu
 
 
 
---------------------------------
+<!-- --------------------------------
 
 ### GTac-Hand: A Robotic Hand with Integrated Biomimetic Tactile Sensing and ECS Recognition Capabilities
 <p align="center">
@@ -55,7 +55,7 @@ Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu
     <a href="./gtac_hand.html">[Website]</a>
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Hand">[Code]</a>
 </p>
-
+ -->
 
 
 
@@ -66,9 +66,7 @@ Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu
 <p align="center">
 Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
 </p>
-<p align="center">
-Accepted by IEEE RA-L (2022)
-</p>
+
 
 <p align="center">
 <img height="250" src="./src/img/gtac_gripper_mode.png">
