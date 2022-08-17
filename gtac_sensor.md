@@ -11,8 +11,9 @@
 </p>
 
 <p align="center">
-    <a href="http://arxiv.org/abs/2201.12005">[Paper]</a>
-    <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Sensor">[Code]</a>
+    <a href="https://ieeexplore.ieee.org/document/9794929">[Paper]</a>
+	<a href="https://drive.google.com/file/d/1lGXeqj-TtublAFg88YtDc1K4IEQt558t/view?usp=sharing">[pdf]</a>
+	<a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Sensor">[Code]</a>
     <a href="./gtac_sensor.html">[Website]</a>
     <a href="https://youtu.be/Pmd8PvLpeUA">[Video]</a>
     <a href="./src/citations/gtac_sensor.txt">[Bibtex]</a>

@@ -17,6 +17,7 @@ Wensi Zhang,
 
 <p align="center">
     <a href="https://doi.org/10.1109/LRA.2022.3181370">[Paper]</a>
+	<a href="https://drive.google.com/file/d/1L_ox6iwC_qF6Yhz8cgCkkZ46yHV4SpWS/view?usp=sharing">[pdf]</a>
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Gripper">[Code]</a>
     <a href="https://youtu.be/44X5uXroEYc">[Video]</a>
     <a href="https://drive.google.com/file/d/1L_ox6iwC_qF6Yhz8cgCkkZ46yHV4SpWS/view">[pdf]</a>
