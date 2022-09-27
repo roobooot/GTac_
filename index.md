@@ -8,7 +8,9 @@ This page is to list the papers about GTac and its integration with robotics, fo
 ### GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots
 
 <p align="center">
-Zeyu Lu, Xingyu Gao, and Haoyong Yu (published in IEEE Sensors Journal)
+Zeyu Lu, Xingyu Gao, and Haoyong Yu 
+
+(published in IEEE Sensors Journal)
 </p>
 
 
@@ -38,7 +40,9 @@ Zeyu Lu, Xingyu Gao, and Haoyong Yu (published in IEEE Sensors Journal)
 
 ### GTac-Hand: A Robotic Hand with Integrated Biomimetic Tactile Sensing and ECS Recognition Capabilities
 <p align="center">
-Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu (submitted to IEEE Transactions on Mechatronics)
+Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu 
+
+(submitted to IEEE Transactions on Mechatronics)
 </p>
 
 
@@ -63,7 +67,9 @@ Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu (submi
 
 ### GTac-Gripper: A Reconfigurable Under-actuated Four-fingered Robotic Gripper with Tactile Sensing
 <p align="center">
-Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu (published in IEEE RA-L)
+Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu 
+
+(published in IEEE RA-L)
 </p>
 
 
@@ -83,6 +89,39 @@ Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu (published in IEEE RA-L)
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Hand">[Code]</a>
 </p>
 
+
+---------------------------------------------------
+
+
+### GTac-Gripper V2 with Epicyclic Joints and Reconfigurability-Based Tactile Features Argumentation
+<p align="center">
+Haotian Guo*, Zeyu Lu*, Tian Lyu, and Haoyong Yu 
+
+* indicates equal contributions
+
+(Submitted to ICRA2022)
+</p>
+
+
+<p align="center">
+<img height="250" src="./src/img/gp2/data_representation.png">
+</p>
+
+<p align="center">
+<img height="200" src="./src/img/gp2/cover.png">
+<img height="200" src="./src/img/gp2/mechanical_design_t2.jpg">
+</p>
+
+<p align="center">
+<img height="200" src="./src/img/gp2/palm_perception_grasping.png">
+</p>
+
+<p align="center">
+    <a href="https://doi-org.libproxy1.nus.edu.sg/10.1109/LRA.2022.3181370">[Paper]</a>
+    <a href="./gtac_gripper.html">[Website]</a>
+    <a href="https://youtu.be/44X5uXroEYc">[Video]</a>
+    <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Hand">[Code]</a>
+</p>
 
 
 -----------------------------
