@@ -106,7 +106,6 @@ Haotian Guo*, Zeyu Lu*, Tian Lyu, and Haoyong Yu
 </p>
 
 <p align="center">
-<img height="200" src="./src/img/gp2/cover.png">
 <img height="200" src="./src/img/gp2/mechanical_design_t2.png">
 <img height="200" src="./src/img/gp2/palm_perception_grasping.png">
 </p>
