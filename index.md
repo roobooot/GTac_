@@ -14,10 +14,8 @@ Zeyu Lu, Xingyu Gao, and Haoyong Yu
 </p>
 
 
-
-
 <p align="center">
-<img height="100" src="./src/img/skin_inspired_white.png">
+<img height="150" src="./src/img/skin_inspired_white.png">
 </p>
 
 <p align="center">
@@ -83,7 +81,7 @@ Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
 </p>
 
 <p align="center">
-    <a href="https://doi-org.libproxy1.nus.edu.sg/10.1109/LRA.2022.3181370">[Paper]</a>
+    <a href="https://doi.org/10.1109/LRA.2022.3181370">[Paper]</a>
     <a href="./gtac_gripper.html">[Website]</a>
     <a href="https://youtu.be/44X5uXroEYc">[Video]</a>
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Hand">[Code]</a>
@@ -114,13 +112,6 @@ Haotian Guo*, Zeyu Lu*, Tian Lyu, and Haoyong Yu
 
 <p align="center">
 <img height="200" src="./src/img/gp2/palm_perception_grasping.png">
-</p>
-
-<p align="center">
-    <a href="https://doi-org.libproxy1.nus.edu.sg/10.1109/LRA.2022.3181370">[Paper]</a>
-    <a href="./gtac_gripper.html">[Website]</a>
-    <a href="https://youtu.be/44X5uXroEYc">[Video]</a>
-    <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Hand">[Code]</a>
 </p>
 
 
