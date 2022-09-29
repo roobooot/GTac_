@@ -133,11 +133,12 @@ Hanwen Zhang*, Zeyu Lu*, Wenyu Liang, Haoyong Yu, Yao Mao, and Yan Wu
 
 <p align="center">
 <img height="250" src="./src/img/swab_test/1(a). realKUKA.jpg">
+<img height="250" src="./src/img/swab_test/work_process.jpg">
 </p>
 
 <p align="center">
 <img height="200" src="./src/img/swab_test/GTac_patch_exploded2.png">
-<img height="200" src="./src/img/swab_test/overall_framework_color.pdf">
+<img height="200" src="./src/img/swab_test/overall_framework_color.png">
 </p>
 
 
