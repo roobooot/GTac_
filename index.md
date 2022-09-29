@@ -94,6 +94,31 @@ Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
 ---------------------------------------------------
 
 
+### Robotic Interaction Control on Deformable Objects via Tactile Feedback
+<p align="center">
+Hanwen Zhang*, Zeyu Lu*, Wenyu Liang, Haoyong Yu, Yao Mao, and Yan Wu
+</p>
+<p align="center">
+* indicates equal contributions
+</p>
+<p align="center">
+(Submitted to IEEE RA-L)
+</p>
+
+
+<p align="center">
+<img height="150" src="./src/img/swab_test/1(a). realKUKA.jpg">
+<img height="100" src="./src/img/swab_test/work_process.png">
+</p>
+
+<p align="center">
+<img height="150" src="./src/img/swab_test/GTac_patch_exploded2.png">
+<img height="150" src="./src/img/swab_test/overall_framework_color.png">
+</p>
+
+---------------------------------------------------
+
+
 ### GTac-Gripper V2 with Epicyclic Joints and Reconfigurability-Based Tactile Features Argumentation
 <p align="center">
 Haotian Guo*, Zeyu Lu*, Tian Lyu, and Haoyong Yu 
@@ -116,30 +141,7 @@ Haotian Guo*, Zeyu Lu*, Tian Lyu, and Haoyong Yu
 </p>
 
 
----------------------------------------------------
 
-
-### Robotic Interaction Control on Deformable Objects via Tactile Feedback
-<p align="center">
-Hanwen Zhang*, Zeyu Lu*, Wenyu Liang, Haoyong Yu, Yao Mao, and Yan Wu
-</p>
-<p align="center">
-* indicates equal contributions
-</p>
-<p align="center">
-(Submitted to IEEE RA-L)
-</p>
-
-
-<p align="center">
-<img height="150" src="./src/img/swab_test/1(a). realKUKA.jpg">
-<img height="100" src="./src/img/swab_test/work_process.png">
-</p>
-
-<p align="center">
-<img height="150" src="./src/img/swab_test/GTac_patch_exploded2.png">
-<img height="150" src="./src/img/swab_test/overall_framework_color.png">
-</p>
 
 
 -----------------------------
