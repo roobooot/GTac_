@@ -112,7 +112,7 @@ Hanwen Zhang*, Zeyu Lu*, Wenyu Liang, Haoyong Yu, Yao Mao, and Yan Wu
 </p>
 
 <p align="center">
-<img height="150" src="./src/img/swab_test/GTac_patch_exploded2.png">
+<img height="150" src="./src/img/swab_test/GTac_RobotiQ.jpg">
 <img height="150" src="./src/img/swab_test/overall_framework_color.png">
 </p>
 
