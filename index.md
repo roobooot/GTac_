@@ -109,7 +109,7 @@ Hanwen Zhang*, Zeyu Lu*, Wenyu Liang, Haoyong Yu, Yao Mao, and Yan Wu
 <p align="center">
 <img height="150" src="./src/img/swab_test/1(a). realKUKA.jpg">
 <img height="100" src="./src/img/swab_test/work_process.png">
-<img height="100" src="./src/img/swab_test/GTac_RobotiQ.jpg">
+<img height="150" src="./src/img/swab_test/GTac_RobotiQ.jpg">
 </p>
 
 <p align="center">
