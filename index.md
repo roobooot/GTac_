@@ -116,6 +116,30 @@ Haotian Guo*, Zeyu Lu*, Tian Lyu, and Haoyong Yu
 </p>
 
 
+---------------------------------------------------
+
+
+### Robotic Interaction Control on Deformable Objects via Tactile Feedback
+<p align="center">
+Hanwen Zhang*, Zeyu Lu*, Wenyu Liang, Haoyong Yu, Yao Mao, and Yan Wu
+</p>
+<p align="center">
+* indicates equal contributions
+</p>
+<p align="center">
+(Submitted to IEEE RA-L)
+</p>
+
+
+<p align="center">
+<img height="250" src="./src/img/swab_test/1(a). realKUKA.jpg">
+</p>
+
+<p align="center">
+<img height="200" src="./src/img/swab_test/GTac_patch_exploded2.png">
+<img height="200" src="./src/img/swab_test/overall_framework_color.pdf">
+</p>
+
 
 -----------------------------
 ### Acknowledge
