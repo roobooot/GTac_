@@ -8,7 +8,7 @@ This page is to list the papers about GTac and its integration with robotics, fo
 ### GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots
 
 <p align="center">
-Zeyu Lu, Xingyu Gao, and Haoyong Yu 
+<a href="https://roobooot.github.io">Zeyu Lu*</a>, Xingyu Gao, and Haoyong Yu 
 </p>
 <p align="center">
 (published in IEEE Sensors Journal)
@@ -39,7 +39,7 @@ Zeyu Lu, Xingyu Gao, and Haoyong Yu
 
 ### GTac-Hand: A Robotic Hand with Integrated Biomimetic Tactile Sensing and ECS Recognition Capabilities
 <p align="center">
-Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu 
+<a href="https://roobooot.github.io">Zeyu Lu*</a>, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu 
 </p>
 <p align="center">
 (submitted to IEEE Transactions on Mechatronics)
@@ -67,7 +67,7 @@ Zeyu Lu, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu
 
 ### GTac-Gripper: A Reconfigurable Under-actuated Four-fingered Robotic Gripper with Tactile Sensing
 <p align="center">
-Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu 
+<a href="https://roobooot.github.io">Zeyu Lu*</a>, Haotian Guo, Wensi Zhang, and Haoyong Yu 
 </p>
 <p align="center">
 (published in IEEE RA-L)
@@ -96,7 +96,7 @@ Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
 
 ### Robotic Interaction Control on Deformable Objects via Tactile Feedback
 <p align="center">
-Hanwen Zhang*, <a href="roobooot.github.io">Zeyu Lu*</a>, <a href="https://www.liangwenyu.com/">Wenyu Liang</a>, Haoyong Yu, Yao Mao, and <a href="https://yan-wu.com/">Yan Wu</a>
+Hanwen Zhang*, <a href="https://roobooot.github.io">Zeyu Lu*</a>, <a href="https://www.liangwenyu.com/">Wenyu Liang</a>, Haoyong Yu, Yao Mao, and <a href="https://yan-wu.com/">Yan Wu</a>
 </p>
 <p align="center">
 * indicates equal contributions
@@ -159,5 +159,5 @@ SERC Grant No.: 192 25 00054.
 
 
 <p align="left">
-Should you have any queries or comments about the GTac related works, please feel free to contact <a href="roobooot.github.io">Zeyu Lu</a> (email: zeyu.lu@u.nus.edu). 
+Should you have any queries or comments about the GTac related works, please feel free to contact <a href="https://roobooot.github.io">Zeyu Lu</a> (email: zeyu.lu@u.nus.edu). 
 </p>
