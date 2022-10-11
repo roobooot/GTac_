@@ -96,7 +96,7 @@ Zeyu Lu, Haotian Guo, Wensi Zhang, and Haoyong Yu
 
 ### Robotic Interaction Control on Deformable Objects via Tactile Feedback
 <p align="center">
-Hanwen Zhang*, Zeyu Lu*, Wenyu Liang, Haoyong Yu, Yao Mao, and Yan Wu
+Hanwen Zhang*, <a href="roobooot.github.io">Zeyu Lu*</a>, <a href="https://www.liangwenyu.com/">Wenyu Liang</a>, Haoyong Yu, Yao Mao, and <a href="https://yan-wu.com/">Yan Wu</a>
 </p>
 <p align="center">
 * indicates equal contributions
@@ -157,4 +157,8 @@ SERC Grant No.: 192 25 00054.
 </p>
 
 
+
+<p align="left">
 Please visit our <a href="https://github.com/roobooot/GTac_">[github repo]</a>.
+Should you have any queries or comments about the GTac related works, please feel free to contact <a href="roobooot.github.io">Zeyu Lu</a> (email: zeyu.lu@u.nus.edu). 
+</p>
