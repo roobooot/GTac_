@@ -159,6 +159,5 @@ SERC Grant No.: 192 25 00054.
 
 
 <p align="left">
-Please visit our <a href="https://github.com/roobooot/GTac_">[github repo]</a>.
 Should you have any queries or comments about the GTac related works, please feel free to contact <a href="roobooot.github.io">Zeyu Lu</a> (email: zeyu.lu@u.nus.edu). 
 </p>
