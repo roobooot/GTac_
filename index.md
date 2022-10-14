@@ -16,7 +16,7 @@ This page is to list the papers about GTac and its integration with robotics, fo
 
 
 <p align="center">
-<img height="150" src="./src/im g/skin_inspired_white.png">
+<img height="150" src="./src/img/skin_inspired_white.png">
 </p>
 
 <p align="center">
