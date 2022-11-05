@@ -34,7 +34,7 @@ Conceptualization: Z.L., H.G., and H.Y.
 
 Methodology: Z.L., H.G., and H.Y.
 
-Electronic Parts: Z.L. and H.G.
+Electronic Parts: Z.L.
 
 Mechanical Parts and Fabrication: H.G. and Z.L.
 
@@ -48,7 +48,7 @@ Project administration: H.Y.
 
 Supervision: H.Y.
 
-Writing – original draft: Z.L. and H.G.
+Writing – original draft: Z.L. 
 
 Writing – review & editing: Z.L., H.G., W.Z., and H.Y.
 
