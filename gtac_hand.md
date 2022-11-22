@@ -10,7 +10,7 @@
 
 
 <p align="center">
-<img height="200" src="./src/img/gtac_hand_rendering_0.JPG">
+<!-- <img height="200" src="./src/img/gtac_hand_rendering_0.JPG"> -->
 <img height="200" src="./src/img/gtac_hand_rendering_1.png">
 </p>
 
@@ -23,22 +23,6 @@
     <a href="https://github.com/roobooot/GTac_/tree/main/software/GTac_Hand">[Code]</a>
 </p>
 
-> Abstract—Human hands can effectively perform daily activities,
-such as grasping and handovers of fragile objects,
-utilizing the tactile sensing capabilities which simultaneously
-perceive normal and shear forces via the mechanoreceptors
-highly integrated into the fingers and palm; here, human
-somatosensory systems leverage complex tactile feedback into
-patterns and identify the extrinsic contact states (ECSs) of
-objects in contact-rich tasks. Similarly, these features are still
-open issues and critical for robots in acquiring such human
-skills. In this letter, we integrate GTac sensors into a robotic
-hand, GTac-Hand, to obtain tactile feedback from its fingers
-and palm, resulting in 285 tactile measurements. Our results
-show that GTac-Hand can grasp delicate objects and precisely
-identify their ECSs via human-like patterning and learning
-models, which can be used for robots to perform challenging
-tasks, such as delicate object grasping, object handovers, and
-ball-hit recognition.
+> Abstract—In many interaction and manipulation tasks, robots need to estimate the state or properties, such as extrinsic contact states (ECSs), on the object being manipulated. Tactile sensing is an essential sensor modality for robots to acquire this relevant information. In this article, we present a robotic hand integrated with tactile sensors that combine two force sensing principles as skin-like heterogeneity, piezoresistive and Hall effect, and can obtain normal and shear contact force feedback simultaneously from the fingers and palm, resulting in 285 tactile sensing measurements at a rate of 150 Hz. In the contact-rich manipulation task, there would be complicatedly coupled contact relationships between the robotic hand and the grasped objects during external contact. Section-wise features (SWFs) are implemented to leverage these tactile features by means of incorporating distributed forces, and acquiring the dynamic time-varying rate and tactile events. A quantitative evaluation of the performance of recognizing nine ECSs is provided such as 99.6% accuracy and the SWFs resulted in a significant reduction (30%) in the error rates. Given the human-like tactile sensing integration design and high-quality real-time models of patterning and learning, the robotic hand can perform challenging tasks, such as delicate object grasping, object handovers, and ball-hit recognition.
 
 -------------------------------------
