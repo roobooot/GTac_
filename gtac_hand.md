@@ -1,4 +1,4 @@
-### GTac-Hand: A Robotic Hand with Integrated Biomimetic Tactile Sensing and ECS Recognition Capabilities
+### GTac-Hand: A Robotic Hand with Integrated Tactile Sensing and Extrinsic Contact Sensing Capabilities
 
 <a href="https://roobooot.github.io/">Zeyu Lu</a>, 
 <a href="https://wiki.nus.edu.sg/display/biorobotics/2021/01/13/Guo+Haotian">Haotian Guo</a>, 
