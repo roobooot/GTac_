@@ -31,7 +31,7 @@ For more information, please check out our paper below.
   <img width="400" src="https://drive.google.com/uc?export=view&id=18ZXgVP_oYma_QvhO2UcUdRpGpyQ5F1Ca">
 </p>
 
-Z. Lu, X. Gao, and H. Yu, “**GTac: A Biomimetic Tactile Sensor with Skin-like Heterogeneous Force Feedback for Robots**,” arXiv:2201.12005 [cs], Jan. 2022. [Online]. Available: http://arxiv.org/abs/2201.12005
+Z. Lu, X. Gao and H. Yu, "GTac: A Biomimetic Tactile Sensor With Skin-Like Heterogeneous Force Feedback for Robots," in IEEE Sensors Journal, vol. 22, no. 14, pp. 14491-14500, 15 July15, 2022, doi: 10.1109/JSEN.2022.3181128.
 
 #### Video
 <!---[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Pmd8PvLpeUA/0.jpg)](https://youtu.be/Pmd8PvLpeUA)--->
