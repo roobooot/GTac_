@@ -1,0 +1,8 @@
+graft src
+graft tests
+
+include .bumpversion.cfg
+include LICENSE
+include README.md
+
+global-exclude *.py[cod] __pycache__/* *.so *.dylib
