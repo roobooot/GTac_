@@ -39,7 +39,7 @@ This page is to list the papers about GTac and its integration with robotics, fo
 
 ### GTac-Hand: A Robotic Hand with Integrated Biomimetic Tactile Sensing and ECS Recognition Capabilities
 <p align="center">
-<a href="https://roobooot.github.io">Zeyu Lu</a>, Haotian Guo, David Carmona, Shounak Bhattacharya, and Haoyong Yu 
+<a href="https://roobooot.github.io">Zeyu Lu</a>, and Haoyong Yu 
 </p>
 <p align="center">
 (submitted to IEEE Transactions on Mechatronics)
